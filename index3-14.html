@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/submit-feedback" method="post">
+        <h2>Gửi phản hồi khách hàng</h2>
+        <label>Đánh giá của bạn:</label><br>
+        <input type="radio" id="star1" name="rating" value="1" required>
+        <label for="star1">⭐</label><br>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">⭐⭐</label><br>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">⭐⭐⭐</label><br>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">⭐⭐⭐⭐</label><br>
+        <input type="radio" id="star5" name="rating" value="55">
+        <label for="star5">⭐⭐⭐⭐⭐</label><br>
+        <br>
+        <label for="feedback">Ý kiến của bạn:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="40" placeholder="Nhập ý kiến của bạn..." required></textarea><br>
+        <label for="email">Email liên hệ:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+        <button type="submit">Gửi phản hồi</button>
+    </form>   
+</body>
+</html>

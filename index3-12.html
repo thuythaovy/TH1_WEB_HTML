@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="submit-survey" method="post">
+        <h2>Khảo sát ý kiến người dùng</h2>
+        <label> Bạn là:</label><br>
+        <input type="radio" id="male" name="gender" value="Nam" required>
+        <label for="male">Nam</label><br>
+        <input type="radio" id="female" name="gender" value="Nữ">
+        <label for="female">Nữ</label><br><br>
+        <label>Bạn quan tâm đến:</label><br>
+        <input type="checkbox" id="fashion" name="interest" value="Thời trang">
+        <label for="fashion">Thời trang</label><br>
+        <input type="checkbox" id="tech" name="interest" value="Công nghệ">
+        <label for="tech">Công nghệ</label><br>
+        <input type="checkbox" id="sport" name="interest" value="Thể thao">
+        <label for="sport">Thể thao</label><br><br>
+        <label for="satisfaction">Bạn đánh giá dịch vụ của chúng tôi như thế nào?</label><br>
+        <select id="satisfaction" name="satisfaction" required>
+            <option value="">--Chọn mức độ--</option>
+            <option value="Rất hài lòng">Rất hài lòng</option>
+            <option value="Hài lòng">Hài lòng</option>
+            <option value="Bình thường">Bình thường</option>
+            <option value="Không hài lòng">Không hài lòng</option>
+        </select><br><br>
+        <label for="feedback">Góp ý thêm:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="40" placeholder="Nhập ý kiến của bạn..."></textarea><br>
+        <button type="submit">Gửi khảo sát</button>
+    </form>
+</body>
+</html>

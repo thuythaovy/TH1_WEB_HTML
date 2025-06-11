@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/submit-reservation" method="post">
+        <h2>Đặt bàn quán ăn</h2>
+        <label for="name">Họ và tên:</label><br>
+        <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" required><br><br>
+        <label for="people">Số lượng khách:</label><br>
+        <input type="number" id="people" name="people" min="1" max="50" required><br><br>
+        <label for="datetime">Ngày giờ đặt bàn:</label><br>
+        <input type="datetime-local" id="datetime" name="datetime" required><br><br>
+        <label for="note">Yêu cầu đặc biệt:</label><br>
+        <textarea id="note" name="note" rows="4" cols="50" placeholder="Ví dụ: Cần bàn gần cửa sổ, không ăn hải sản..."></textarea><br><br>
+        <button type="submit">Đặt bàn</button>
+    </form>
+</body>
+</html>

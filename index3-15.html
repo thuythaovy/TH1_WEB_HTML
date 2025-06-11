@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="submit-order" method="post">
+        <h2>Thanh toán đơn hàng</h2>
+        <label for="fullname">Họ và tên:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+        <label for="phone">Số điện thoại:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" placeholder="0901234567" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+        <label for="address">Địa chỉ nhận hàng:</label><br>
+        <textarea id="address" name="address" rows="3" cols="50" required></textarea><br><br>
+        <label>Hình thức thanh toán:</label><br>
+        <input type="radio" id="cod" name="payment" value="cod" required>
+        <label for="cod">Thanh toán khi nhận hàng (COD)</label><br>
+        <input type="radio" id="bank" name="payment" value="bank">
+        <label for="bank">Chuyển khoản ngân hàng</label><br>
+        <input type="radio" id="momo" name="payment" value="momo">
+        <label for="momo">Ví MoMo</label><br><br>
+        <button type="submit">Thanh toán</button>
+    </form>
+</body>
+</html>

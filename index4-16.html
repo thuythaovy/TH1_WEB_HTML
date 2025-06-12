@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            font-size: 18px;
+            margin: 10px 0 5px;
+        }
+        .product p {
+            color: green;
+            font-weight: bold;
+        }
+        .product button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Danh sách điện thoại</h1>
+    <div class="product-list">
+        <div class="product">
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6525/6525391_sd.jpg" alt="Iphone 15">
+            <h3>Iphone 15</h3>
+            <p>25.000.000đ</p>
+            <button>Mua ngay</button>
+        </div>
+        <div class="product">
+            <img src="https://www.celletronic.com/wp-content/uploads/2024/01/Samsung-Galaxy-S24-ULTRA-BLACK.jpg" alt="Samsung S24">
+            <h3>Samsung Galaxy S24</h3>
+            <p>21.500.000đ</p>
+            <button>Mua ngay</button>
+        </div>
+        <div class="product">
+            <img src="https://www.techspot.com/images/products/2022/smartphones/org/2023-02-27-product-2.jpg" alt="Xiaomi 13">
+            <h3>Xiaomi 13 Pro</h3>
+            <p>15.000.000đ</p>
+            <button>Mua ngay</button>
+        </div>
+    </div>
+</body>
+</html>
